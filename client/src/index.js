@@ -7,8 +7,8 @@ import { ApolloProvider } from 'react-apollo';
 
 // create the client and send it the endpoint for the GraphQL uri
 const client = new ApolloClient({
-    uri: "https://browsinghealth.herokuapp.com/"
-    // uri: "http://localhost:4000" 
+    // uri: "https://browsinghealth.herokuapp.com/"
+    uri: process.env.REACT_APP_PRODUCTION_URI || "http://localhost:4000" 
 })
 
 // Render the App component
