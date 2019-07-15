@@ -1,0 +1,28 @@
+@import 'colors';
+
+// edit reactstrap's 'navbar' class to chance the color of the navbar
+.navbar {
+	background-color: $color-primary;
+
+	// DELETE WHEN LINKS FIXED
+	a:hover {
+		letter-spacing: 0.0em;
+	}
+}
+
+// DELETE WHEN LINKS FIXED
+.nav-tabs {
+	.nav-link:hover {
+		letter-spacing: 0.0em;
+	}
+}
+
+// create a horizontal margin around the list elements so they aren't so close together
+@media (min-width: 992px){
+    .navbar {
+
+    	li {
+	        margin: 0 1em;
+	    }
+    }
+}

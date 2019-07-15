@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  font-weight: lighter;
+  height: 100vh;
+  color: #484c55;
+}
+
+.row {
+  padding: 1% 0;
+}
+
+a {
+  color: #678f8f;
+  letter-spacing: 0em;
+  transition: all 0.25s ease-in;
+}
+
+a:hover {
+  color: #becfcf;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  transition: all 0.25s ease-in;
+}
+
+/*# sourceMappingURL=styles.css.map */

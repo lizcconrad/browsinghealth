@@ -1,0 +1,9 @@
+.show-more-button {
+  color: #27275F;
+}
+.show-more-button:hover {
+  cursor: pointer;
+  color: #60608F;
+}
+
+/*# sourceMappingURL=showMore.css.map */

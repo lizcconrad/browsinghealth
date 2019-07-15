@@ -1,0 +1,15 @@
+// square off the right side of the searchbar to align it with the button
+.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+// eliminate the padding from the right side of the search bar to align it with the button
+.col-8 {
+    padding-right: 0;
+}
+
+// move the dropdown menu slightly to the left 
+.dropdown-menu {
+    margin-left: 1%;
+}

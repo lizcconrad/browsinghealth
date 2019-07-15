@@ -1,0 +1,11 @@
+@import 'colors';
+
+.show-more-button {
+
+    color: $color-primary;
+
+    &:hover {
+        cursor: pointer;
+        color: $color-accent;
+    }
+}
