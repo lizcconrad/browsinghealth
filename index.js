@@ -4,8 +4,7 @@ const express = require("express");
 const path = require("path");
 
 // Connect to the MongoDB using either the Heroku URI or localhost
-console.log(process.env.MONGODB_URI);
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fresh_clinical");
+mongoose.connect("mongodb://localhost/fresh_clinical");
 
 //MONGOOSE SCHEMAS
 // each schema represents one collection in the database
