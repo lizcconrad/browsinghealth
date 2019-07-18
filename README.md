@@ -64,8 +64,6 @@ Deploying an update to the actual interface or server could not be simpler. All 
 #### Database updates
 In order to update the database, you'll have to login to the MongoLabs instance that the app uses through your terminal. From there you can work with the database as you would any mongo database.
 
-The following code is added to the the server `index.js` file to make deployment work:
-
 
 ## React UI
 
