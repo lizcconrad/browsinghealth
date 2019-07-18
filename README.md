@@ -285,7 +285,9 @@ Note: the `sctid` is only available for a fraction of relevant conditions. The a
 I'm not entirely clear on the distinction between reference and results_reference, but in case that becomes relevant I included the information for each entry.
 
 ## Python Scripts
-In order to extract the data from the many, many XML files downloaded from clinicaltrials.gov and put it in the Mongo database, a number of Python scripts have been written. The purpose of each one will be covered here.
+In order to extract the data from the many, many XML files downloaded from clinicaltrials.gov and put it in the Mongo database, a number of Python scripts have been written. The purpose of each one will be covered here. The repo that has these scripts is [here](https://github.com/lizcconrad/bh-py-scripts).
+
+**Note: these scripts are set to update a local copy of the database, if you wish to have them directly update the MongoLabs database, you will need to reconfigure them.**
 
 Note that each script that involves creating documents from scratch offers the option to drop the collection altogether before running. This allows you to start fresh if needed, but also allows you to add onto the database if you have a folder of entirely new entries. It's probably possible to make the scripts smart enough to detect whether it's seeing duplicate data to eliminate this prompt, but in their current state it's up to the user to know whether it's providing unique data or not.
 
