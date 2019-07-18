@@ -2,9 +2,10 @@ const { GraphQLServer } = require('graphql-yoga');
 const mongoose = require("mongoose");
 const express = require("express");
 const path = require("path");
+require('dotenv').config();
 
 // Connect to the MongoDB using either the Heroku URI or localhost
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/clinical_trials_test");
+mongoose.connect(process.env.MONGODB_URI);
 
 //MONGOOSE SCHEMAS
 // each schema represents one collection in the database
