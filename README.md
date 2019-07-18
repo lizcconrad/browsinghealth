@@ -50,32 +50,21 @@ This document contains a detailed description of all of the architecture and cod
    - [sctid.sh](#sctidsh)
 7. [Additional Notes](#additional-notes)
 
-## Heroku Deployment
+## Development and Deployment
 The first section of the document explains how to go about deploying updates to the website. Using Heroku, it's relatively painless to get the site up and running. The guide I used to do this is found [here](https://coursework.vschool.io/deploying-mern-with-heroku/). The current version of the app is live at [https://browsinghealth.herokuapp.com/]().
 
-In order to update the site, it's incredibly simple.
+#### Developing on your local machine
+In order to develop on your local machine, all you need to do is clone the repo and create a `.env` folder with a value for the `MONGODB_URI` environment variable.
+
+Once that is set up, navigate to the directory of the repo and run `npm install` or `yarn install`, depending which package manager you use.  Do the same thing in the `client` folder. After this, still in the `client` folder, run `npm dev` (or `yarn dev`). From here, the app will open in a browser and it will update in real time with any changes.
 
 #### Interface and Server updates
 Deploying an update to the actual interface or server could not be simpler. All you need to do is change the code as you wish, and push to the master branch of the repo. Heroku is set up to automatically deploy any updates when there is a push to the master branch. That's it, you're done!
 
+#### Database updates
+In order to update the database, you'll have to login to the MongoLabs instance that the app uses through your terminal. From there you can work with the database as you would any mongo database.
+
 The following code is added to the the server `index.js` file to make deployment work:
-
-```javascript
-// express.static is responsible for static file requests to the client
-// when a request is made, it will now look in the build folder
-server.express.use(express.static(path.join(__dirname, "client", "build")))
-
-// send index.html if a request that isn't recognized is received
-server.express.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
-
-```
-
-Next, set up mongolab. This is done through a simple Heroku CLI command, and has already been done for this project.
-
-The next step is adding commands to the scripts in package.json so Heroku is able to run everything properly.
-
 
 
 ## React UI
