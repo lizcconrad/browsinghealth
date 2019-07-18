@@ -54,7 +54,7 @@ This document contains a detailed description of all of the architecture and cod
 The first section of the document explains how to go about deploying updates to the website. Using Heroku, it's relatively painless to get the site up and running. The guide I used to do this is found [here](https://coursework.vschool.io/deploying-mern-with-heroku/). The current version of the app is live at [https://browsinghealth.herokuapp.com/]().
 
 #### Developing on your local machine
-In order to develop on your local machine, all you need to do is clone the repo and create a `.env` folder with a value for the `MONGODB_URI` environment variable.
+In order to develop on your local machine, all you need to do is clone the repo and create a `.env` file in the outer directory with a value for the `MONGODB_URI` environment variable.
 
 Once that is set up, navigate to the directory of the repo and run `npm install` or `yarn install`, depending which package manager you use.  Do the same thing in the `client` folder. After this, still in the `client` folder, run `npm dev` (or `yarn dev`). From here, the app will open in a browser and it will update in real time with any changes.
 
