@@ -6,7 +6,7 @@
     "ajv": "^6.5.2",
     "apollo-boost": "^0.1.10",
     "apollo-client": "^2.3.5",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "concurrently": "^4.1.1",
     "graphql": "^0.13.2",
     "jquery": "^3.3.1",
